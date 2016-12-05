@@ -1,6 +1,7 @@
 FROM resin/rpi-raspbian:jessie-20161117
 MAINTAINER Nico Maas <mail@nico-maas.de>
 ENV DEBIAN_FRONTEND noninteractive
+RUN [ "cross-build-start" ]
 # Installing brother_ql
 RUN apt-get update && apt-get install -y \
   sudo \
@@ -38,4 +39,5 @@ RUN useradd \
   --password=$(mkpasswd pi) \
   pi \
   && sed -i '/%sudo[[:space:]]/ s/ALL[[:space:]]*$/NOPASSWD:ALL/' /etc/sudoers
-#ENTRYPOINT ["/usr/bin/tail", "-f", "/etc/hosts"]  
+#ENTRYPOINT ["/usr/bin/tail", "-f", "/etc/hosts"]
+RUN [ "cross-build-end" ]  
