@@ -1,4 +1,5 @@
-FROM resin/rpi-raspbian:jessie-20161117
+#FROM resin/rpi-raspbian:jessie-20161117
+FROM resin/armv7hf-debian-qemu
 MAINTAINER Nico Maas <mail@nico-maas.de>
 ENV DEBIAN_FRONTEND noninteractive
 RUN [ "cross-build-start" ]
