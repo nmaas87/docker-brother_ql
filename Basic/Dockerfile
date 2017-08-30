@@ -1,4 +1,4 @@
-#FROM resin/rpi-raspbian:jessie-20161117
+#FROM resin/rpi-raspbian:fixed
 FROM nmaas87/docker-raspbian_qemu:jessie-20161202
 MAINTAINER Nico Maas <mail@nico-maas.de>
 ENV DEBIAN_FRONTEND noninteractive

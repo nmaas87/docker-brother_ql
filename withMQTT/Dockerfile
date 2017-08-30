@@ -1,4 +1,4 @@
-FROM nmaas87/docker-brother_ql:jessie-20161202
+FROM nmaas87/docker-brother_ql:fixed
 MAINTAINER Nico Maas <mail@nico-maas.de>
 ENV DEBIAN_FRONTEND noninteractive
 RUN [ "cross-build-start" ]
