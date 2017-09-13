@@ -7,7 +7,7 @@ RUN curl -O http://repo.mosquitto.org/debian/mosquitto-repo.gpg.key && \
   apt-key add mosquitto-repo.gpg.key && \
   rm mosquitto-repo.gpg.key && \
   cd /etc/apt/sources.list.d/ && \
-  curl -O http://repo.mosquitto.org/debian/mosquitto-jessie.list && \
+  curl -O http://repo.mosquitto.org/debian/mosquitto-stretch.list && \
   apt-get update && \
   apt-get install -y mosquitto mosquitto-clients && \
   apt-get autoremove -y && \ 
